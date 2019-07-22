@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<img id="clickrandom" src="1.png" height="200" width="200" onclick="clickrandom()">
+<script>
+    i=0
+    function clickrandom() {
+        i = Math.floor(Math.random() * 6)
+        console.log(i)
+        if (i === 1) {
+            document.getElementById('clickrandom').src = '1.png'
+        }
+        if (i === 2) {
+            document.getElementById('clickrandom').src = '2.png'
+        }
+        if (i === 3) {
+            document.getElementById('clickrandom').src = '3.png'
+        }
+        if (i === 4) {
+            document.getElementById('clickrandom').src = '4.png'
+
+        }
+        if (i===5) {
+            document.getElementById('clickrandom').src = '5.png'
+        }
+        if (i===0){
+            document.getElementById('clickrandom').src='6.png'
+        }
+    }
+
+</script>
+</body>
+</html>
